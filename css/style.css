@@ -1,0 +1,586 @@
+/* ==========================================================================
+   Variables & Reset
+   ========================================================================== */
+:root {
+  --color-bg: #faf8f4;
+  --color-bg-alt: #f1ede4;
+  --color-text: #16150f;
+  --color-text-muted: #6c6a60;
+  --color-accent: #9c4423;
+  --color-border: #ddd6c7;
+
+  --font-serif: "Fraunces", "Noto Serif KR", Georgia, serif;
+  --font-sans: "Inter", "Noto Sans KR", system-ui, -apple-system, Helvetica, Arial, sans-serif;
+
+  --max-width: 1120px;
+  --transition: 0.25s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  line-height: 1.65;
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* ==========================================================================
+   Header / Navbar
+   ========================================================================== */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 76px;
+}
+
+.logo {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: 1.2rem;
+  letter-spacing: 0.01em;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links a {
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  transition: color var(--transition);
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 1px;
+  background-color: var(--color-accent);
+  transition: width var(--transition);
+}
+
+.nav-links a:hover {
+  color: var(--color-text);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.nav-toggle span {
+  width: 22px;
+  height: 1px;
+  background: var(--color-text);
+  transition: transform var(--transition), opacity var(--transition);
+}
+
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+.hero {
+  padding: 140px 0 90px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.hero-eyebrow {
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: 28px;
+}
+
+.hero-name {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: clamp(2.6rem, 7vw, 5rem);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero-role {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: clamp(1.15rem, 2.2vw, 1.4rem);
+  color: var(--color-accent);
+  margin-bottom: 28px;
+}
+
+.hero-description {
+  max-width: 560px;
+  color: var(--color-text-muted);
+  margin-bottom: 44px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 32px 40px;
+  margin-top: 64px;
+  padding-top: 44px;
+  border-top: 1px solid var(--color-border);
+}
+
+.stat-value {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: clamp(1.3rem, 2.4vw, 1.7rem);
+  color: var(--color-text);
+  line-height: 1.25;
+  margin-bottom: 10px;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+/* ==========================================================================
+   Buttons & Links
+   ========================================================================== */
+.btn {
+  display: inline-block;
+  padding: 14px 30px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  border: 1px solid var(--color-text);
+  transition: background-color var(--transition), color var(--transition), border-color var(--transition);
+}
+
+.btn-primary {
+  background-color: var(--color-text);
+  color: var(--color-bg);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--color-text);
+}
+
+.btn-outline:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.link {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 2px;
+  transition: color var(--transition), border-color var(--transition);
+}
+
+.link:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+/* ==========================================================================
+   Sections (shared)
+   ========================================================================== */
+.section {
+  padding: 110px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.section:last-of-type {
+  border-bottom: none;
+}
+
+.section-alt {
+  background-color: var(--color-bg-alt);
+}
+
+.section-eyebrow {
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 56px;
+}
+
+/* ==========================================================================
+   About
+   ========================================================================== */
+.about-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 72px;
+  align-items: start;
+}
+
+.about-photo {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background-color: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+}
+
+.about-text p {
+  font-family: var(--font-serif);
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  margin-bottom: 24px;
+  max-width: 620px;
+}
+
+.about-credential {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+  padding-top: 24px;
+  border-top: 1px solid var(--color-border);
+  max-width: 620px;
+}
+
+.about-credential-label {
+  min-width: 48px;
+  padding-top: 2px;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.about-credential-value {
+  font-size: 0.9rem;
+  color: var(--color-text);
+}
+
+/* ==========================================================================
+   Career
+   ========================================================================== */
+.career-timeline {
+  border-top: 1px solid var(--color-border);
+}
+
+.career-row {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 40px;
+  padding: 48px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.career-years {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  margin-bottom: 10px;
+}
+
+.career-title {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: 1.4rem;
+  letter-spacing: -0.01em;
+  line-height: 1.4;
+}
+
+.career-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.career-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: 16px;
+}
+
+.career-list li {
+  color: var(--color-text-muted);
+  padding-left: 16px;
+  position: relative;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.career-list li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  color: var(--color-text-muted);
+}
+
+.career-list-achievement li {
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.career-list-achievement li::before {
+  color: var(--color-accent);
+}
+
+.career-sublist {
+  margin-top: 8px;
+}
+
+.career-sublist li {
+  padding-left: 14px;
+  font-size: 0.9em;
+  font-weight: 400;
+  color: var(--color-text-muted);
+  margin-bottom: 6px;
+}
+
+.career-sublist li::before {
+  content: "·";
+  color: var(--color-text-muted);
+}
+
+.num {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   Projects
+   ========================================================================== */
+.project-index {
+  border-top: 1px solid var(--color-border);
+}
+
+.project-row {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 40px;
+  align-items: start;
+  padding: 44px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.project-number {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  padding-top: 6px;
+}
+
+.project-info h3 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: 1.6rem;
+  letter-spacing: -0.01em;
+  margin-bottom: 12px;
+}
+
+.project-meta {
+  font-size: 0.78rem;
+  letter-spacing: 0.03em;
+  color: var(--color-text-muted);
+  margin-bottom: 16px;
+}
+
+.project-subtitle {
+  font-size: 0.92rem;
+  color: var(--color-text-muted);
+  margin-bottom: 16px;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  color: var(--color-text-muted);
+  margin-bottom: 20px;
+}
+
+/* ==========================================================================
+   Core Competencies
+   ========================================================================== */
+.competency-list {
+  font-family: var(--font-serif);
+  font-weight: 300;
+  font-size: clamp(1.25rem, 2.6vw, 1.8rem);
+  line-height: 1.9;
+  max-width: 780px;
+}
+
+/* ==========================================================================
+   Contact
+   ========================================================================== */
+.contact-heading {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: clamp(1.7rem, 4vw, 2.6rem);
+  letter-spacing: -0.01em;
+  max-width: 640px;
+  margin-bottom: 24px;
+}
+
+.contact-intro {
+  color: var(--color-text-muted);
+  max-width: 440px;
+  margin-bottom: 44px;
+}
+
+.contact-links {
+  display: flex;
+  gap: 36px;
+  flex-wrap: wrap;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+.site-footer {
+  padding: 32px 0;
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  color: var(--color-text-muted);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 76px;
+    left: 0;
+    right: 0;
+    background-color: var(--color-bg);
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    border-bottom: 1px solid var(--color-border);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition);
+  }
+
+  .nav-links.open {
+    max-height: 340px;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 16px;
+  }
+
+  .hero {
+    padding: 110px 0 70px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-photo {
+    max-width: 240px;
+  }
+
+  .career-row {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .career-details {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .project-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
