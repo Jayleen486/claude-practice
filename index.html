@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>[이름] · Career Portfolio</title>
-  <meta name="description" content="[이름] — 공공기관 경영기획·자산운용·창업지원 경력 포트폴리오" />
+  <title>이은주 · Career Portfolio</title>
+  <meta name="description" content="이은주 — 공공기관 경영기획·자산운용·창업지원 경력 포트폴리오" />
+  <meta name="robots" content="noindex, nofollow" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&family=Noto+Serif+KR:wght@300;400;500;600&family=Noto+Sans+KR:wght@400;500;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap"
     rel="stylesheet"
   />
 
@@ -19,434 +20,437 @@
 
   <header class="site-header">
     <nav class="navbar container">
-      <a href="#home" class="logo">[이름]</a>
+      <a href="#about" class="logo">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span class="logo-text">이은주</span>
+        <span class="logo-sep">/</span>
+        <span class="logo-role">공공기관 경영기획·자산운용·창업지원</span>
+      </a>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
       </button>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#career">CAREER</a></li>
-        <li><a href="#projects">PROJECTS</a></li>
-        <li><a href="#competencies">CORE COMPETENCIES</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#about" data-nav>ABOUT ME</a></li>
+        <li><a href="#resume" data-nav>RESUME</a></li>
+        <li><a href="#experience" data-nav>EXPERIENCE</a></li>
+        <li><a href="#profile" data-nav>PROFILE</a></li>
+        <li><a href="#contact" data-nav>CONTACT</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <!-- Hero -->
-    <section id="home" class="hero">
-      <div class="container">
-        <p class="hero-eyebrow">CAREER PORTFOLIO — 2026</p>
-        <h1 class="hero-name">[이름]</h1>
-        <p class="hero-role">공공기관 경영기획·자산운용·창업지원</p>
-        <p class="hero-description">
-          공공기관에서 경영기획·자산운용·창업지원 업무를 15년간 수행했습니다.
-          최근에는 정부·지자체·공공기관·대기업·스타트업·AC/VC가 참여하는 창업지원 및 오픈이노베이션 사업을 기획하고 운영하고 있습니다.
-        </p>
-        <div class="hero-actions">
-          <a href="#career" class="btn btn-primary">경력 보기</a>
-          <a href="#contact" class="btn btn-outline">연락하기</a>
+    <!-- About Me -->
+    <section id="about" class="section about-section">
+      <div class="container about-grid">
+
+        <div class="about-visual">
+          <div class="about-visual-backdrop" aria-hidden="true"></div>
+          <div class="about-visual-card">
+            <div class="media-frame about-photo-frame">
+              <img
+                class="media-img"
+                src="assets/images/profile.jpg"
+                alt="[이름] 프로필 사진"
+                onerror="this.classList.add('media-missing')"
+              />
+            </div>
+            <div class="about-id">
+              <h2 class="about-id-name">이은주</h2>
+              <p class="about-id-field">공공기관 경영기획 · 자산운용 · 창업지원</p>
+            </div>
+          </div>
         </div>
 
-        <div class="hero-stats">
-          <div class="stat-item">
-            <p class="stat-value">15년</p>
-            <p class="stat-label">공공기관 경력</p>
+        <div class="about-content">
+          <p class="section-index section-index-left">01</p>
+          <h1 class="about-hello">Hello</h1>
+          <p class="about-lede">제 소개와 해온 일을 정리했습니다.</p>
+
+          <div class="about-actions">
+            <a href="#resume" class="btn btn-primary">RESUME</a>
+            <a href="#experience" class="btn btn-outline">EXPERIENCE</a>
           </div>
-          <div class="stat-item">
-            <p class="stat-value">100억원</p>
-            <p class="stat-label">연간 임대수익</p>
+
+          <div class="about-intro">
+            <p>공공기관에서 경영기획, 자산운용, 창업지원 업무를 2011년부터 담당해 왔습니다.</p>
+            <p>현재는 정부, 지자체, 공공기관, 대기업, 스타트업, 액셀러레이터·벤처캐피탈이 참여하는 창업지원 및 오픈이노베이션 사업을 기획하고 운영하고 있습니다.</p>
           </div>
-          <div class="stat-item">
-            <p class="stat-value">35억 → 82억원</p>
-            <p class="stat-label">창업지원사업 연간 운영 규모</p>
+
+          <div class="about-stats">
+            <div class="stat-item">
+              <p class="stat-value">15년</p>
+              <p class="stat-label">공공기관 경력 (2011–현재)</p>
+            </div>
+            <div class="stat-item">
+              <p class="stat-value">100억원</p>
+              <p class="stat-label">연간 임대수익 최초 달성 (2022)</p>
+            </div>
+            <div class="stat-item">
+              <p class="stat-value">35억 → 82억원</p>
+              <p class="stat-label">창업도약패키지 연간 운영 규모</p>
+            </div>
+            <div class="stat-item">
+              <p class="stat-value">S등급 · 1위</p>
+              <p class="stat-label">2025 창업도약패키지 사업평가 · 12개 기관 중</p>
+            </div>
           </div>
-          <div class="stat-item">
-            <p class="stat-value">1위</p>
-            <p class="stat-label">2025 창업도약패키지 사업평가 · 12개 기관 중</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume" class="section section-alt">
+      <div class="container">
+        <p class="section-index">02</p>
+        <h2 class="section-title"><span class="title-mark" aria-hidden="true"></span>Resume</h2>
+
+        <div class="resume-block">
+          <div class="card table-card">
+            <ul class="resume-highlights">
+              <li>중앙정부, 인천광역시, 인천경제자유구역청 등 공공부문 사업 기획·운영 경험</li>
+              <li>경영기획·성과관리 → 자산운용·임대관리 → 창업지원·민관협력으로 업무 영역 확대</li>
+              <li>중소벤처기업부, 인천시, 인천경제자유구역청의 창업지원 사업을 두루 경험</li>
+              <li>정부·지자체·공공기관·대기업·스타트업·AC/VC 등 다양한 이해관계자 간 협업 및 사업 운영</li>
+            </ul>
           </div>
-          <div class="stat-item">
-            <p class="stat-value">B → A → S</p>
-            <p class="stat-label">창업도약패키지 사업평가 · 2023 → 2024 → 2025</p>
+        </div>
+
+        <!-- Career Summary -->
+        <div class="resume-block">
+          <h3 class="resume-subtitle">Career Summary</h3>
+          <div class="card table-card">
+            <div class="table-scroll">
+              <table class="summary-table">
+                <thead>
+                  <tr>
+                    <th>기간</th>
+                    <th>소속 / 직급</th>
+                    <th>주요 업무</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2011–2016</td>
+                    <td>인천정보산업진흥원<br />기획조정팀 · 주임</td>
+                    <td>경영기획 · 경영평가 · 기관홍보</td>
+                  </tr>
+                  <tr>
+                    <td>2016–2019</td>
+                    <td>인천테크노파크<br />기획평가팀 · 대리</td>
+                    <td>경영기획 · 성과평가 · 기관통합 후속업무 · 실무위원회 운영</td>
+                  </tr>
+                  <tr>
+                    <td>2019–2023</td>
+                    <td>인천테크노파크<br />단지지원팀 · 과장</td>
+                    <td>자산운용 · 임대관리 · 입주기업 관리</td>
+                  </tr>
+                  <tr>
+                    <td>2023–2026</td>
+                    <td>인천테크노파크<br />혁신창업센터 · 과장</td>
+                    <td>창업도약패키지 사업 운영 총괄 · 창업지원</td>
+                  </tr>
+                  <tr>
+                    <td>2024–현재</td>
+                    <td>인천테크노파크<br />혁신창업센터 · 차장</td>
+                    <td>창업생태계 · 민간주도 스타트업육성 · AC 협의회 운영지원</td>
+                  </tr>
+                  <tr>
+                    <td>2026–현재</td>
+                    <td>인천테크노파크<br />혁신창업센터 · 차장</td>
+                    <td>민관협력 오픈이노베이션 · 글로벌 실증사업 총괄</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- About -->
-    <section id="about" class="section">
+    <!-- Experience -->
+    <section id="experience" class="section">
       <div class="container">
-        <p class="section-eyebrow">01 — ABOUT</p>
-        <div class="about-grid">
-          <div class="about-photo" aria-hidden="true"></div>
-          <div class="about-text">
-            <p>공공기관에서 경영기획·자산운용·창업지원 업무를 15년간 수행했습니다. 최근에는 정부·지자체·공공기관·대기업·스타트업·AC/VC가 참여하는 창업지원 및 오픈이노베이션 사업을 기획하고 운영하고 있습니다.</p>
-            <p>경영기획부터 자산운용·임대관리, 창업지원까지 공공기관의 다양한 업무 영역을 경험했으며, 최근에는 정부사업과 지자체 사업, 경제자유구역청 사업 등 다양한 창업지원사업을 담당하고 있습니다.</p>
-            <div class="profile-table">
-              <div class="profile-row">
-                <span class="profile-label">이름</span>
-                <span class="profile-value">[이름]</span>
-              </div>
-              <div class="profile-row">
-                <span class="profile-label">생년월일</span>
-                <span class="profile-value">[YYYY.MM.DD]</span>
-              </div>
-              <div class="profile-row">
-                <span class="profile-label">학력</span>
-                <span class="profile-value">단국대학교 피아노 전공 (2014.03.–2018.02.)</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        <p class="section-index">03</p>
+        <h2 class="section-title"><span class="title-mark" aria-hidden="true"></span>Experience</h2>
 
-    <!-- Career -->
-    <section id="career" class="section section-alt">
-      <div class="container">
-        <p class="section-eyebrow">02 — CAREER</p>
-
-        <div class="table-scroll">
-          <table class="career-table">
-            <thead>
-              <tr>
-                <th>기간</th>
-                <th>소속</th>
-                <th>직급</th>
-                <th>주요 업무</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>2011–2019</td>
-                <td>[기관명]</td>
-                <td>[직급]</td>
-                <td>경영기획·성과관리</td>
-              </tr>
-              <tr>
-                <td>2019–2023</td>
-                <td>[기관명]</td>
-                <td>[직급]</td>
-                <td>자산운용·임대관리</td>
-              </tr>
-              <tr>
-                <td>2023–현재</td>
-                <td>[기관명]</td>
-                <td>[직급]</td>
-                <td>창업지원·창업생태계·민관협력</td>
-              </tr>
-              <tr>
-                <td>2026–현재</td>
-                <td>[기관명]</td>
-                <td>[직급]</td>
-                <td>오픈이노베이션·글로벌 실증</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="experience-actions">
+          <a href="/이은주_CV_2026.docx" class="btn btn-primary btn-sm" download>DOWNLOAD CV</a>
         </div>
 
-        <ul class="career-timeline">
+        <ul class="experience-list">
 
-          <li class="career-row">
-            <div class="career-period">
-              <span class="career-years">2011–2019</span>
-              <h3 class="career-title">경영기획·성과관리</h3>
-            </div>
-            <div class="career-details">
-              <div class="career-block">
-                <p class="career-label">주요 업무</p>
-                <ul class="career-list">
-                  <li>중소벤처기업부 및 인천광역시 경영평가 대응</li>
-                  <li>직원 성과평가 체계 설계 및 운영</li>
-                  <li>법인 통합 후속업무</li>
-                  <li>법인 실무위원회 운영</li>
-                </ul>
+            <li class="card experience-card">
+              <div class="experience-meta">
+                <span class="experience-years">2011–2019</span>
+                <h4 class="experience-title">경영기획·성과관리</h4>
               </div>
-              <div class="career-block">
-                <p class="career-label">주요 성과</p>
-                <ul class="career-list career-list-achievement">
-                  <li><span class="num">27개 부서</span> 정량 성과평가체계 설계 및 성과지표 도입</li>
-                  <li>2019년 중소벤처기업부 경영평가 <span class="num">S등급</span> 달성에 기여</li>
-                  <li>법인통합 성과 기여를 인정받아 인천시장 표창 수상</li>
-                </ul>
+              <div class="experience-body">
+                <p class="experience-desc">조직의 경영계획과 성과관리 체계를 수립하고, 부서별 성과지표 설계·운영을 통해 조직의 성과관리 및 경영평가 대응 업무를 담당했습니다.</p>
+                <div class="experience-block">
+                  <p class="experience-label">주요 업무</p>
+                  <ul class="bullet-list">
+                    <li>중소벤처기업부·인천광역시 경영평가</li>
+                    <li>직원 성과평가 체계 설계 및 운영</li>
+                    <li>법인 통합 후속업무 및 경영시스템 고도화 용역 운영지원</li>
+                    <li>법인 실무위원회 운영 및 주요 경영안건 관리</li>
+                  </ul>
+                </div>
+                <div class="experience-block experience-block-result">
+                  <p class="experience-label">주요 성과</p>
+                  <ul class="bullet-list bullet-list-result">
+                    <li><span class="num">27개 부서</span> 정량 성과평가체계 및 성과지표 도입</li>
+                    <li>2019년 중소벤처기업부 경영평가 <span class="num">S등급</span> 달성에 기여</li>
+                    <li>법인통합 성과 기여로 인천시장 표창 수상(<span class="num">'17</span>)</li>
+                  </ul>
+                </div>
               </div>
-            </div>
-          </li>
+            </li>
 
-          <li class="career-row">
-            <div class="career-period">
-              <span class="career-years">2019–2023</span>
-              <h3 class="career-title">자산운용·임대관리</h3>
-            </div>
-            <div class="career-details">
-              <div class="career-block">
-                <p class="career-label">주요 업무</p>
-                <ul class="career-list">
-                  <li>법인 소유 <span class="num">5개 건물</span> 자산운용</li>
-                  <li>총 <span class="num">63,835㎡</span>, <span class="num">120여개</span> 입주공간 임대 및 입주기업 관리</li>
-                  <li>일반임대 및 근린상가 입주·계약연장·퇴거 관리</li>
-                  <li>임대관리비 청구 및 정산, 수입결의, 명도 및 쟁송관리</li>
-                  <li>임대 및 입주기업 관련 민원 대응</li>
-                </ul>
+            <li class="card experience-card">
+              <div class="experience-meta">
+                <span class="experience-years">2019–2023</span>
+                <h4 class="experience-title">자산운용·임대관리</h4>
               </div>
-              <div class="career-block">
-                <p class="career-label">주요 성과</p>
-                <ul class="career-list career-list-achievement">
-                  <li>임대료 할인 사업장 정상화를 통해 연 <span class="num">2억 원</span> 이상 추가수익 확보(2021~)</li>
-                  <li>
-                    전략적 렌트프리 정책 도입을 통한 신규 입주 유치
-                    <ul class="career-sublist">
-                      <li>2021년 4,306㎡ 신규 입주 → 연 <span class="num">6.2억 원</span> 추가 임대수입</li>
-                      <li>2022년 8,352㎡ 신규 입주 → 연 <span class="num">10.8억 원</span> 추가 임대수입</li>
-                    </ul>
-                  </li>
-                  <li>연간 임대수익 <span class="num">100억 원</span> 최초 달성(2022)</li>
-                  <li>입주율 <span class="num">94.3%</span> 달성(2022), 전년 대비 <span class="num">11.9%p</span> 개선</li>
-                </ul>
+              <div class="experience-body">
+                <p class="experience-desc">법인 소유 자산의 운용과 임대관리를 담당하고, 입주공간·임대차 계약 및 임대수익을 체계적으로 관리하며 자산 운영 효율화를 추진했습니다.</p>
+                <div class="experience-block">
+                  <p class="experience-label">주요 업무</p>
+                  <ul class="bullet-list">
+                    <li>법인 소유 <span class="num">5개 건물</span> 자산운용</li>
+                    <li>총 <span class="num">63,835㎡</span>, <span class="num">120여개</span> 입주공간 임대 및 입주기업 관리</li>
+                    <li>일반임대 및 근린상가 입주·계약연장·퇴거 관리</li>
+                    <li>임대관리비 청구 및 정산, 수입결의, 명도 및 쟁송관리</li>
+                    <li>임대 및 입주기업 관련 민원 대응</li>
+                  </ul>
+                </div>
+                <div class="experience-block experience-block-result">
+                  <p class="experience-label">주요 성과</p>
+                  <ul class="bullet-list bullet-list-result">
+                    <li>연간 임대수익 <span class="num">100억 원</span> 최초 달성(<span class="num">'22</span>)</li>
+                    <li>입주율 <span class="num">94.3%</span> 달성(<span class="num">'22</span>), 전년 대비 <span class="num">11.9%p</span> 개선</li>
+                    <li>전략적 렌트프리 정책 도입으로 <span class="num">'21~'22년 12,600㎡</span> 신규 입주, <span class="num">17억</span> 추가 임대수입 발생</li>
+                  </ul>
+                </div>
               </div>
-            </div>
-          </li>
+            </li>
 
-          <li class="career-row">
-            <div class="career-period">
-              <span class="career-years">2023–현재</span>
-              <h3 class="career-title">창업지원·창업생태계·민관협력</h3>
-            </div>
-            <div class="career-details">
-              <div class="career-block">
-                <p class="career-label">주요 업무</p>
-                <ul class="career-list">
-                  <li>정부 및 지자체 창업지원사업 기획·운영</li>
-                  <li>창업도약패키지 사업 운영 총괄</li>
-                  <li>지원기업 선정·육성 및 사업성과 관리</li>
-                  <li>민간 투자기관 및 대기업 연계</li>
-                  <li>창업생태계 및 민관협력 프로그램 기획·운영</li>
-                  <li>인천지역 민간 액셀러레이터 네트워크 구축 및 운영지원</li>
-                </ul>
+            <li class="card experience-card">
+              <div class="experience-meta">
+                <span class="experience-years">2023–2026</span>
+                <h4 class="experience-title">창업지원·창업생태계·민관협력</h4>
               </div>
-              <div class="career-block">
-                <p class="career-label">주요 성과</p>
-                <ul class="career-list career-list-achievement">
-                  <li>창업도약패키지 연간 운영 규모 <span class="num">35억 원 → 45억 원 → 82억 원</span> 확대</li>
-                  <li>
-                    창업도약패키지 사업평가 <span class="num">B등급 → A등급 → S등급</span>으로 지속 개선
-                    <ul class="career-sublist">
-                      <li>2023년 B등급</li>
-                      <li>2024년 A등급</li>
-                      <li>2025년 <span class="num">S등급</span>, <span class="num">12개 기관 중 1위</span></li>
-                    </ul>
-                  </li>
-                  <li>2025년 지원기업 <span class="num">47개사</span> 연간 투자유치 누계 <span class="num">430억 원</span></li>
-                  <li>2025년 지원기업 매출액 <span class="num">1,310억 원</span>, 전년 동기 대비 <span class="num">185%</span> 증가</li>
-                  <li>현대건설과 스타트업 17개사 대상 PoC 실증 및 사업화 지원</li>
-                  <li>인천시 민간주도 스타트업 육성 지원사업 기획(2024) 및 유치(2025)</li>
-                  <li>인천지역 민간 액셀러레이터(AC) 협의회 발족 및 운영지원</li>
-                </ul>
-              </div>
-            </div>
-          </li>
+              <div class="experience-body">
+                <p class="experience-desc">중소벤처기업부 창업도약패키지 일반형 및 대기업협업형 사업과 인천시 민간주도스타트업육성사업을 운영하며, 지원기업 선정·육성, 사업성과 관리, 민간 투자기관 및 대기업 연계 업무를 담당했습니다.</p>
+                <div class="experience-block">
+                  <p class="experience-label">주요 업무</p>
+                  <ul class="bullet-list">
+                    <li>정부 및 지자체 창업지원사업(창업도약패키지 등) 기획·운영</li>
+                    <li>창업생태계 조성 및 민관협력 프로그램 기획·운영</li>
+                    <li>지원기업 선정·육성 및 사업성과 관리 (<span class="num">89개사</span>)</li>
+                    <li>민간 투자기관·대기업·액셀러레이터 연계</li>
+                  </ul>
+                </div>
+                <div class="experience-block experience-block-result">
+                  <p class="experience-label">주요 성과</p>
+                  <ul class="bullet-list bullet-list-result">
+                    <li>창업도약패키지 사업평가 등급 향상, <span class="num">'25년 1위</span>(12개 기관 중)
+                      <span class="bullet-sub">('23 B등급 → '24 A등급 → '25 S등급)</span>
+                    </li>
+                    <li>창업도약패키지 사업 규모 확대 (3년간 평균 <span class="num">63%</span>)
+                      <span class="bullet-sub">('23 35억 → '24 45억 → '25 82억)</span>
+                    </li>
+                    <li>창업도약패키지 대기업협업형 신규사업 유치(<span class="num">'25, 26억</span>)</li>
+                    <li>민간 액셀러레이터 협의회 발족 등 민관 협력 체계 구축(<span class="num">'25.1~</span>)</li>
+                  </ul>
+                </div>
 
-          <li class="career-row">
-            <div class="career-period">
-              <span class="career-years">2026–현재</span>
-              <h3 class="career-title">오픈이노베이션·글로벌 실증</h3>
-            </div>
-            <div class="career-details">
-              <div class="career-block">
-                <p class="career-label">주요 업무</p>
-                <ul class="career-list">
-                  <li>중앙정부 및 경제자유구역청 창업지원사업 기획·운영</li>
-                  <li>공공기관 수요 기반 오픈이노베이션 사업 운영</li>
-                  <li>해외 수요처 기반 글로벌 실증사업 운영</li>
-                </ul>
+                <button
+                  type="button"
+                  class="accordion-toggle"
+                  aria-expanded="false"
+                  aria-controls="exp-2023-detail"
+                >
+                  <span class="accordion-icon" aria-hidden="true">▼</span>
+                  주요 사업 상세 보기
+                </button>
+
+                <div class="accordion-panel" id="exp-2023-detail" hidden>
+                  <div class="table-scroll">
+                    <table class="summary-table projects-table">
+                      <thead>
+                        <tr>
+                          <th>사업명</th>
+                          <th>사업예산 / 지원기업 수</th>
+                          <th>사업 내용</th>
+                          <th>주요 성과</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>2023 창업도약패키지<br /><span class="table-tag">중소벤처기업부</span></td>
+                          <td>30억 원 / 18개사</td>
+                          <td>창업도약기(3~7년차) 기업에 사업화자금 및 프로그램 지원</td>
+                          <td>사업평가 <span class="num">B등급</span>, 선정경쟁률 <span class="num">7:1</span>, 지원기업 매출액 <span class="num">230억 원</span>(협약기간 내)</td>
+                        </tr>
+                        <tr>
+                          <td>2024 창업도약패키지<br /><span class="table-tag">중소벤처기업부</span></td>
+                          <td>45억 원 / 24개사</td>
+                          <td>창업도약기(3~7년차) 기업에 사업화자금 및 프로그램 지원</td>
+                          <td>사업평가 <span class="num">A등급</span>, 선정경쟁률 <span class="num">9:1</span>, 지원기업 매출액 <span class="num">515억 원</span>(협약기간 내)</td>
+                        </tr>
+                        <tr>
+                          <td>2025 창업도약패키지<br /><span class="table-tag">중소벤처기업부</span></td>
+                          <td>82억 원 / 47개사</td>
+                          <td>창업도약기(3~7년차) 기업에 사업화자금 및 프로그램 지원(일반형), 현대건설과 PoC 지원(대기업협업형)</td>
+                          <td>사업평가 <span class="num">S등급</span>, 선정경쟁률 <span class="num">17:1</span>, 지원기업 매출액 <span class="num">1,312억 원</span>(협약기간 내)</td>
+                        </tr>
+                        <tr>
+                          <td>2025 민간주도스타트업육성<br /><span class="table-tag">인천시</span></td>
+                          <td>0.5억 원 / 7개사</td>
+                          <td>민간 AC협의체 설립, AC협의회 공동프로그램 운영, 산학연 인재매칭 등</td>
+                          <td>인천AC협의회 발족(<span class="num">'25.1</span>, 16개사), 밋업데이(<span class="num">'25.9</span>, 141명), 벤처창업 인사이트데이(<span class="num">'25.11</span>, 100명), 잡매칭데이(<span class="num">'25.11</span>, 224명)</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
               </div>
-              <div class="career-block">
-                <p class="career-label">주요 성과</p>
-                <ul class="career-list career-list-achievement">
-                  <li>민관협력 오픈이노베이션 신규사업 유치 및 추진</li>
-                  <li>인천스타트업파크 TRYOUT 글로벌 실증사업 기획 및 추진</li>
-                </ul>
+            </li>
+
+            <li class="card experience-card">
+              <div class="experience-meta">
+                <span class="experience-years">2026–현재</span>
+                <h4 class="experience-title">오픈이노베이션·글로벌 실증</h4>
               </div>
-            </div>
-          </li>
+              <div class="experience-body">
+                <p class="experience-desc">중소벤처기업부 민관협력 오픈이노베이션 사업을 통해 한국수자원공사 수요 기반 중소기업 PoC 실증을 지원하고, 인천스타트업파크 글로벌 실증사업을 통해 스타트업의 해외시장 진출을 위한 현지 파트너 연계 업무를 수행하고 있습니다.</p>
+                <div class="experience-block">
+                  <p class="experience-label">주요 업무</p>
+                  <ul class="bullet-list">
+                    <li>중앙정부 및 경제자유구역청 창업지원사업 기획·운영</li>
+                    <li>공공기관 수요 기반 오픈이노베이션 사업 운영</li>
+                    <li>해외 수요처 기반 글로벌 실증사업 운영</li>
+                  </ul>
+                </div>
+                <div class="experience-block experience-block-result">
+                  <p class="experience-label">주요 성과</p>
+                  <ul class="bullet-list bullet-list-result">
+                    <li>민관협력 오픈이노베이션 사업 추진 (예산 <span class="num">25억 원</span>)</li>
+                    <li>글로벌 실증사업 추진 (예산 <span class="num">6억 원</span>)</li>
+                  </ul>
+                </div>
+
+                <button
+                  type="button"
+                  class="accordion-toggle"
+                  aria-expanded="false"
+                  aria-controls="exp-2026-detail"
+                >
+                  <span class="accordion-icon" aria-hidden="true">▼</span>
+                  주요 사업 상세 보기
+                </button>
+
+                <div class="accordion-panel" id="exp-2026-detail" hidden>
+                  <div class="table-scroll">
+                    <table class="summary-table projects-table">
+                      <thead>
+                        <tr>
+                          <th>사업명</th>
+                          <th>사업예산 / 지원기업 수</th>
+                          <th>사업 내용</th>
+                          <th>주요 성과</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>2026 민관협력 오픈이노베이션-모두의챌린지 기후테크<br /><span class="table-tag">중소벤처기업부</span></td>
+                          <td>25억 원 / 22개사</td>
+                          <td>한국수자원공사와 PoC 지원</td>
+                          <td>추진기간 <span class="num">2026.06.~</span></td>
+                        </tr>
+                        <tr>
+                          <td>2026 인천스타트업파크 TRYOUT 실증<br /><span class="table-tag">인천경제자유구역청</span></td>
+                          <td>30억 원 / 18개사</td>
+                          <td>글로벌 실증사업 총괄</td>
+                          <td>추진기간 <span class="num">2026.09.~</span></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </li>
 
         </ul>
       </div>
     </section>
 
-    <!-- Projects -->
-    <section id="projects" class="section">
+    <!-- Profile -->
+    <section id="profile" class="section section-alt">
       <div class="container">
-        <p class="section-eyebrow">03 — PROJECTS</p>
-        <ul class="project-index">
+        <p class="section-index">04</p>
+        <h2 class="section-title"><span class="title-mark" aria-hidden="true"></span>Profile</h2>
 
-          <li class="project-row">
-            <span class="project-number">01</span>
-            <div class="project-info">
-              <h3>창업도약패키지</h3>
-              <p class="project-meta">2023–2026 · 사업 운영 총괄</p>
-              <ul class="career-list">
-                <li>중소벤처기업부 창업도약패키지 일반형 및 대기업협업형 운영</li>
-                <li>창업기업 선정·육성 및 사업성과 관리</li>
-                <li>민간 투자기관 및 대기업 연계</li>
-                <li>연간 사업 운영 규모 <span class="num">35억 원 → 82억 원</span> 확대</li>
-                <li>2025년 사업평가 <span class="num">S등급</span>, <span class="num">12개 기관 중 1위</span></li>
-                <li>2025년 지원기업 <span class="num">47개사</span> 투자유치 누계 <span class="num">430억 원</span></li>
-              </ul>
+        <div class="card profile-card">
+          <dl class="profile-list">
+            <div class="profile-row">
+              <dt>생년월일</dt>
+              <dd>1986.02.28</dd>
             </div>
-            <div class="project-photos">
-              <figure class="project-photo">
-                <div class="project-photo-frame" aria-hidden="true"></div>
-                <figcaption>[사진 제목]</figcaption>
-              </figure>
-              <figure class="project-photo">
-                <div class="project-photo-frame" aria-hidden="true"></div>
-                <figcaption>[사진 제목]</figcaption>
-              </figure>
+            <div class="profile-row">
+              <dt>거주지</dt>
+              <dd>인천광역시 미추홀구</dd>
             </div>
-          </li>
-
-          <li class="project-row">
-            <span class="project-number">02</span>
-            <div class="project-info">
-              <h3>인천시 민간주도 스타트업 육성 지원사업</h3>
-              <p class="project-meta">2024–2025 · 사업 기획 및 운영</p>
-              <ul class="career-list">
-                <li>인천시 신규 창업지원사업 기획 및 유치</li>
-                <li>민간 액셀러레이터와 연계한 스타트업 발굴·육성</li>
-                <li>인천지역 민간 AC 협의회 발족 및 공동 프로그램 운영</li>
-              </ul>
+            <div class="profile-row">
+              <dt>학력</dt>
+              <dd>단국대학교 기악과 피아노 전공<span class="profile-row-meta">2014.03.–2018.02.</span></dd>
             </div>
-            <div class="project-photos">
-              <figure class="project-photo">
-                <div class="project-photo-frame" aria-hidden="true"></div>
-                <figcaption>[사진 제목]</figcaption>
-              </figure>
-              <figure class="project-photo">
-                <div class="project-photo-frame" aria-hidden="true"></div>
-                <figcaption>[사진 제목]</figcaption>
-              </figure>
+            <div class="profile-row">
+              <dt>자격</dt>
+              <dd>창업보육전문매니저<span class="profile-row-meta">2024.05.18. 취득</span></dd>
             </div>
-          </li>
-
-          <li class="project-row">
-            <span class="project-number">03</span>
-            <div class="project-info">
-              <h3>민관협력 오픈이노베이션</h3>
-              <p class="project-meta">2026.06–2027.05 · 사업 총괄</p>
-              <p class="project-subtitle">「2026 민관협력 오픈이노베이션 지원사업(모두의 챌린지 기후테크)」</p>
-              <div class="project-tags">
-                <span>주관부처 <span class="num">중소벤처기업부</span></span>
-                <span>사업예산 <span class="num">25억원</span></span>
-                <span>지원기업 <span class="num">22개사</span></span>
-              </div>
-              <ul class="career-list">
-                <li>한국수자원공사 수요 기반 중소기업 PoC 실증 지원</li>
-                <li>수요기관–중소기업 간 기술·실증 연계</li>
-                <li>사업 기획 및 운영 총괄</li>
-              </ul>
+            <div class="profile-row">
+              <dt>언어</dt>
+              <dd>영어 (중급)</dd>
             </div>
-            <div class="project-photos">
-              <figure class="project-photo">
-                <div class="project-photo-frame" aria-hidden="true"></div>
-                <figcaption>[사진 제목]</figcaption>
-              </figure>
-              <figure class="project-photo">
-                <div class="project-photo-frame" aria-hidden="true"></div>
-                <figcaption>[사진 제목]</figcaption>
-              </figure>
-            </div>
-          </li>
-
-          <li class="project-row">
-            <span class="project-number">04</span>
-            <div class="project-info">
-              <h3>인천스타트업파크 TRYOUT 글로벌 실증사업</h3>
-              <p class="project-meta">2026.09–2027.01 · 사업 총괄</p>
-              <div class="project-tags">
-                <span>주관 <span class="num">인천경제자유구역청</span></span>
-                <span>사업예산 <span class="num">6억원</span></span>
-                <span>지원기업 <span class="num">15개사</span></span>
-              </div>
-              <ul class="career-list">
-                <li>해외 수요처 기반 글로벌 실증 지원</li>
-                <li>글로벌 BM 고도화</li>
-                <li>해외시장 진출 및 현지 파트너 연계</li>
-              </ul>
-            </div>
-            <div class="project-photos">
-              <figure class="project-photo">
-                <div class="project-photo-frame" aria-hidden="true"></div>
-                <figcaption>[사진 제목]</figcaption>
-              </figure>
-              <figure class="project-photo">
-                <div class="project-photo-frame" aria-hidden="true"></div>
-                <figcaption>[사진 제목]</figcaption>
-              </figure>
-            </div>
-          </li>
-
-          <li class="project-row">
-            <span class="project-number">05</span>
-            <div class="project-info">
-              <h3>현대건설–스타트업 협업 프로그램</h3>
-              <p class="project-meta">2025 · 사업 운영 총괄</p>
-              <ul class="career-list">
-                <li>현대건설과 스타트업 간 협업 프로그램 운영</li>
-                <li>스타트업 17개사 대상 PoC 실증 및 사업화 지원</li>
-              </ul>
-            </div>
-            <div class="project-photos">
-              <figure class="project-photo">
-                <div class="project-photo-frame" aria-hidden="true"></div>
-                <figcaption>[사진 제목]</figcaption>
-              </figure>
-              <figure class="project-photo">
-                <div class="project-photo-frame" aria-hidden="true"></div>
-                <figcaption>[사진 제목]</figcaption>
-              </figure>
-            </div>
-          </li>
-
-        </ul>
-      </div>
-    </section>
-
-    <!-- Core Competencies -->
-    <section id="competencies" class="section section-alt">
-      <div class="container">
-        <p class="section-eyebrow">04 — CORE COMPETENCIES</p>
-        <p class="competency-list">
-          경영기획 &nbsp;/&nbsp; 성과관리 &nbsp;/&nbsp; 자산운용·임대관리 &nbsp;/&nbsp;
-          창업지원사업 기획·운영 &nbsp;/&nbsp; 민관협력·오픈이노베이션 &nbsp;/&nbsp; 창업생태계·AC/VC 네트워크
-        </p>
+          </dl>
+        </div>
       </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="section">
+    <section id="contact" class="section contact-section">
       <div class="container">
-        <p class="section-eyebrow">05 — CONTACT</p>
-        <div class="contact-info">
-          <div class="profile-row">
-            <span class="profile-label">이메일</span>
-            <a href="#" class="link">[이메일]</a>
-          </div>
-          <div class="profile-row">
-            <span class="profile-label">전화</span>
-            <a href="#" class="link">[전화번호]</a>
-          </div>
+        <p class="section-index">05</p>
+        <h2 class="section-title"><span class="title-mark" aria-hidden="true"></span>Contact</h2>
+
+        <div class="card contact-card">
+          <dl class="contact-list">
+            <div class="contact-row">
+              <dt>Name</dt>
+              <dd>이은주 (Lena Lee)</dd>
+            </div>
+            <div class="contact-row">
+              <dt>Email</dt>
+              <dd>puppling@naver.com</dd>
+            </div>
+            <div class="contact-row">
+              <dt>Phone</dt>
+              <dd>010-2805-3595</dd>
+            </div>
+          </dl>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-content">
-      <p>&copy; <span id="year"></span> [이름]</p>
+    <div class="container">
+      <p>&copy; <span id="year"></span> 이은주</p>
     </div>
   </footer>
 
