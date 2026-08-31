@@ -27,15 +27,11 @@
 
 html {
   scroll-behavior: smooth;
-}
-
-html,
-body {
   overflow-x: hidden;
-  width: 100%;
 }
 
 body {
+  width: 100%;
   font-family: var(--font-sans);
   color: var(--color-text);
   background-color: var(--color-bg);
