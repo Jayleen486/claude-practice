@@ -562,6 +562,32 @@ ul {
   color: var(--color-accent);
 }
 
+.experience-block-full {
+  grid-column: 1 / -1;
+}
+
+.task-groups {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.task-group-title {
+  font-weight: 600;
+  color: var(--color-text);
+  font-size: 0.92rem;
+  margin-bottom: 6px;
+}
+
+.task-groups .bullet-list {
+  margin: 0;
+}
+
+.task-groups .bullet-list li:last-child {
+  margin-bottom: 0;
+}
+
 .bullet-sub {
   display: block;
   font-size: 0.85em;
