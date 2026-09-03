@@ -573,6 +573,10 @@ ul {
   gap: 16px;
 }
 
+.task-groups > li {
+  margin-bottom: 0;
+}
+
 .task-group-title {
   font-weight: 600;
   color: var(--color-text);
