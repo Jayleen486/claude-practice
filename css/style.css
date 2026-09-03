@@ -584,14 +584,6 @@ ul {
   margin-bottom: 6px;
 }
 
-.task-groups .bullet-list {
-  margin: 0;
-}
-
-.task-groups .bullet-list li:last-child {
-  margin-bottom: 0;
-}
-
 .bullet-sub {
   display: block;
   font-size: 0.85em;
@@ -626,6 +618,31 @@ ul {
 
 .bullet-list-result li::before {
   background-color: var(--color-accent);
+}
+
+.task-group-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.task-group-detail li {
+  position: relative;
+  padding-left: 16px;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+  font-size: 0.92rem;
+}
+
+.task-group-detail li::before {
+  content: "-";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  color: var(--color-text-muted);
 }
 
 .num {
