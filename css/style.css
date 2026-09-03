@@ -631,24 +631,26 @@ ul {
 .task-group-detail {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 4px;
 }
 
-.task-group-detail li {
+ul.task-group-detail li {
   position: relative;
   padding-left: 16px;
-  line-height: 1.4;
+  margin-bottom: 0;
+  line-height: 1.3;
   color: var(--color-text-muted);
   font-size: 0.92rem;
 }
 
-.task-group-detail li::before {
+ul.task-group-detail li::before {
   content: "-";
   position: absolute;
   left: 0;
   top: 0;
   width: auto;
   height: auto;
+  margin: 0;
   background-color: transparent;
   color: var(--color-text-muted);
 }
